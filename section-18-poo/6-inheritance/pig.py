@@ -2,7 +2,8 @@ from animal import Animal
 
 class Pig(Animal):
 
-    def __init__(self, farm):
+    def __init__(self, name, chip_number, genre, day_birth, farm):
+        super().__init__(name, chip_number, genre, day_birth)
         print("Constructor Clase Hija - Cerdo")
         self.farm = farm
     

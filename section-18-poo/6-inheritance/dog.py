@@ -1,7 +1,8 @@
 from animal import Animal 
 class Dog(Animal):
 
-    def __init__(self, address):
+    def __init__(self, name, chip_number, genre, day_birth, address):
+        super().__init__(name, chip_number, genre, day_birth)
         print("Constructor Clase Hija - Perro")
         self.address = address
     
