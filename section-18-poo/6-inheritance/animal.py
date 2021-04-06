@@ -2,6 +2,9 @@ class Animal:
 
     def __init__(self, name, chip_number, genre, day_birth):
         print("Constructor Super clase - Animal")
+        if (name == None or chip_number == None or genre == None or
+        day_birth == None):
+            raise ValueError("Debes de especificar todos los valores")
         self.name = name
         self.chip_number = chip_number
         self.genre = genre

@@ -3,8 +3,9 @@ from animal import Animal
 
 class Cat(Animal):
 
-    def __init__(self, name, chip_number, genre, day_birth,
-                 live_in_street):
+    def __init__(self, name=None, chip_number=None,
+                 genre=None, day_birth=None,
+                 live_in_street=False):
         super().__init__(name, chip_number, genre, day_birth)
         print("Constructor Clase Hija - Gato")
         self.live_in_street = live_in_street
