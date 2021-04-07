@@ -30,5 +30,9 @@ pig.take_sunny()
 pig.investigate_environment()
 del pig
 
+print(Cat.__mro__)
+print(Dog.__mro__)
+print(Pig.__mro__)
+
 
 
