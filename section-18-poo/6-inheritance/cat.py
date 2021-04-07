@@ -21,3 +21,23 @@ class Cat(Animal):
 
     def jump(self):
         print("Saltando el gato")
+    
+    def show_details(self):
+        super().show_details()
+        print("¿Vive en la calle?: {}".format(self.live_in_street))
+        print("===========================")
+
+    def talk(self):
+        print("Gato cuyo nombre es {} está maullando".format(
+            self.name
+        ))
+
+    def run(self):
+        print("Gato cuyo nombre es {} está corriendo".format(
+            self.name
+        ))
+
+    def eat(self):
+        print("Gato cuyo nombre es {} está comiendo atún".format(
+            self.name
+        ))

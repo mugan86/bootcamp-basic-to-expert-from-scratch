@@ -20,3 +20,23 @@ class Pig(Animal):
     
     def investigate_environment(self):
         print("Cenrdo investigando el entorno")
+    
+    def show_details(self):
+        super().show_details()
+        print("¿Vive en la granja?: {}".format(self.farm))
+        print("===========================")
+    
+    def talk(self):
+        print("Cerdo cuyo nombre es {} está gritando".format(
+            self.name
+        ))
+
+    def run(self):
+        print("Cerdo cuyo nombre es {} está andando".format(
+            self.name
+        ))
+
+    def eat(self):
+        print("Cerdo cuyo nombre es {} está comiendo frutos secos".format(
+            self.name
+        ))

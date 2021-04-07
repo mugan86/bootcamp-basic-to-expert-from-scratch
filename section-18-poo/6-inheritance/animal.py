@@ -17,6 +17,7 @@ class Animal:
         print("Detalles del animal")
 
     def show_details(self):
+        print("===========================")
         print("Detalles del animal")
         print("Nombre: {}".format(self.name))
         print("Nº Chip: {}".format(self.chip_number))
