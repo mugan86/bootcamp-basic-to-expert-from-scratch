@@ -8,7 +8,7 @@ class Cat(Animal):
                  live_in_street=False):
         super().__init__(name, chip_number, genre, day_birth)
         print("Constructor Clase Hija - Gato")
-        self.live_in_street = live_in_street
+        self.__live_in_street = live_in_street
 
     def __del__(self):
         print("Destructor Clase Hija - Gato")
@@ -24,20 +24,30 @@ class Cat(Animal):
     
     def show_details(self):
         super().show_details()
-        print("¿Vive en la calle?: {}".format(self.live_in_street))
+        print("¿Vive en la calle?: {}".format(self.__live_in_street))
         print("===========================")
 
     def talk(self):
         print("Gato cuyo nombre es {} está maullando".format(
-            self.name
+            self.get_name()
         ))
 
     def run(self):
         print("Gato cuyo nombre es {} está corriendo".format(
-            self.name
+            self.get_name()
         ))
 
     def eat(self):
         print("Gato cuyo nombre es {} está comiendo atún".format(
-            self.name
+            self.get_name()
         ))
+    
+    # setter
+
+    def set_live_in_street(self, live_in_street):
+        self.__live_in_street = live_in_street
+    
+    # getter
+
+    def get_live_in_street(self):
+        return self.__live_in_street

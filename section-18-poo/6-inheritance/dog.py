@@ -8,7 +8,7 @@ class Dog(Animal):
                  address=""):
         super().__init__(name, chip_number, genre, day_birth)
         print("Constructor Clase Hija - Perro")
-        self.address = address
+        self.__address = address
 
     def __del__(self):
         print("Destructor Clase Hija - Perro")
@@ -21,20 +21,30 @@ class Dog(Animal):
 
     def show_details(self):
         super().show_details()
-        print("Domicilio: {}".format(self.address))
+        print("Domicilio: {}".format(self.__address))
         print("===========================")
     
     def talk(self):
         print("Perro cuyo nombre es {} está ladrando".format(
-            self.name
+            self.get_name()
         ))
 
     def run(self):
         print("Perro cuyo nombre es {} está corriendo".format(
-            self.name
+            self.get_name()
         ))
 
     def eat(self):
         print("Perro cuyo nombre es {} está comiendo un hueso".format(
-            self.name
+            self.get_name()
         ))
+    
+    # setter
+
+    def set_address(self, address):
+        self.__address = address
+    
+    # getter
+
+    def get_address(self):
+        return self.__address

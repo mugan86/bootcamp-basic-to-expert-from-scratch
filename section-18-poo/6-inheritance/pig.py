@@ -7,7 +7,7 @@ class Pig(Animal):
                  farm = True):
         super().__init__(name, chip_number, genre, day_birth)
         print("Constructor Clase Hija - Cerdo")
-        self.farm = farm
+        self.__farm = farm
     
     def __del__(self):
         print("Destructor Clase Hija - Cerdo")
@@ -23,20 +23,30 @@ class Pig(Animal):
     
     def show_details(self):
         super().show_details()
-        print("¿Vive en la granja?: {}".format(self.farm))
+        print("¿Vive en la granja?: {}".format(self.__farm))
         print("===========================")
     
     def talk(self):
         print("Cerdo cuyo nombre es {} está gritando".format(
-            self.name
+            self.get_name()
         ))
 
     def run(self):
         print("Cerdo cuyo nombre es {} está andando".format(
-            self.name
+            self.get_name()
         ))
 
     def eat(self):
         print("Cerdo cuyo nombre es {} está comiendo frutos secos".format(
-            self.name
+            self.get_name()
         ))
+    
+    # setter
+
+    def set_farm(self, farm):
+        self.__farm = farm
+    
+    # getter
+
+    def get_farm(self):
+        return self.__farm
