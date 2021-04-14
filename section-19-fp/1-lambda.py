@@ -87,3 +87,44 @@ is_same_length_args_kwargs = lambda *args, **kwargs : len(args) == len(kwargs)
 
 print(is_same_length_args_kwargs(1,2, name='Anartz')) # False
 print(is_same_length_args_kwargs(1,2, name='Anartz', lastname='Mugika')) # True
+
+# FUnción anonima dentro de otra función
+
+def divisor (n):
+    return lambda a: a / n
+
+two_divisor = divisor(2) # lambda a: a / 2
+three_divisor = divisor(3) # lambda a: a / 3
+five_divisor = divisor(5) # lambda a: a / 5
+ten_divisor = divisor(10) # lambda a: a / 10
+twelve_divisor = divisor(20) # lambda a: a / 20
+
+# 2
+print("=========2========")
+print(two_divisor(134)) # 67
+print(two_divisor(4)) # 2
+print(two_divisor(90)) # 45
+
+# 3
+print("=========3========")
+print(three_divisor(39)) # 13
+print(three_divisor(9)) # 3
+print(three_divisor(7)) # 2.33
+
+# 5
+print("=========5========")
+print(five_divisor(25)) # 5
+print(five_divisor(1)) # 0.2
+print(five_divisor(2)) # 0.4
+
+# 10
+print("=========10========")
+print(ten_divisor(134)) # 13.4
+print(ten_divisor(4)) # 0.4
+print(ten_divisor(90)) # 9
+
+# 20
+print("=========20========")
+print(twelve_divisor(134)) # 6.7
+print(twelve_divisor(4)) # 0.2
+print(twelve_divisor(90)) # 4.5
