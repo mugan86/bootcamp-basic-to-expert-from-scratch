@@ -2,6 +2,7 @@
     "python.analysis.extraPaths": [
         "./section-18-poo/6-inheritance",
         "./section-18-poo/7-multi-inheritance",
-        "./section-20-modules"
+        "./section-20-modules",
+        "./section-21-pypi"
     ]
 }
