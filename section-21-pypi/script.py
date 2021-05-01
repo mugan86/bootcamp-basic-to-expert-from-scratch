@@ -8,4 +8,9 @@ config = dict(
     type=CURRENT
 )
 
-Config(config)
+configuration = Config(config)
+
+print(configuration.get_api_key())
+print(configuration.get_lang())
+print(configuration.get_units())
+print(configuration.get_type())
