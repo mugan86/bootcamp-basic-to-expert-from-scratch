@@ -1,4 +1,5 @@
 
+import requests
 from open_weather_api.config import Config
 from open_weather_api.constants import URL
 
@@ -8,8 +9,11 @@ class Api(Config):
         print('Api start')
         super().__init__(config)
 
+    def get_data(self, find_params):
+        "Get all data with generate URL"
+        return requests.get(self.__get_url(find_params)).json()
 
-    def get_url(self, find_params):
+    def __get_url(self, find_params):
         '''
         Information to define URL
         ------------------------
