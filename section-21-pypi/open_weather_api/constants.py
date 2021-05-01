@@ -3,10 +3,6 @@ URL = 'https://api.openweathermap.org/data/2.5/'
 CURRENT = 'weather?'
 FORECAST = 'forecast?'
 
-# Options to take wetaher
-CURRENT = 'weather?'
-FORECAST = 'forecast?'
-
 LANGCODES = {
     'af': 'Afrikaans',
     'al': 'Albanian',
