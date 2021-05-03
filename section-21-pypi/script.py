@@ -7,10 +7,10 @@ config = dict(
     key='194f66064a427d3f0bcca212ab703736',
     units='metric',
     lang='es',
-    type=FORECAST
+    type=CURRENT
 )
 
-karakate_weather = Coordinates(config, '43.1926324', '-2.4151716')
+karakate_weather = Coordinates(config, 43.1994987,-2.2879428)
 
 print('-------------------------')
 print(karakate_weather.get_data())

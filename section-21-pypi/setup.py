@@ -11,9 +11,9 @@ setuptools.setup(
     description="Obtener la información del tiempo actual y previsión con Openweather Map Api",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/mugan86/<mi-proyecto>",
+    url="https://github.com/mugan86/frontend-meang-online-shop",
     project_urls={
-        "Bug Tracker": "https://github.com/mugan86/<mi-proyecto>/issues",
+        "Bug Tracker": "https://github.com/mugan86/frontend-meang-online-shop/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
