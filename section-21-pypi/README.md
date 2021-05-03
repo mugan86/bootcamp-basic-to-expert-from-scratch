@@ -10,10 +10,10 @@ Location options:
 ## Install intructions
 
 ### Windows
-```pip install mugan86-openwm-api```
+```pip install owm-api-mugan86```
 
 ### Linux / MacOSx
-```pip3 install mugan86-openwm-api```
+```pip3 install owm-api-mugan86```
 
 ## Available Languages to take info
 
