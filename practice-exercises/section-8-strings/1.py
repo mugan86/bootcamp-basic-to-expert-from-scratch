@@ -1,3 +1,5 @@
-name = input("Introduzca su nombre para recibir un saludo personalizado: \n")
+"""
+"""
+str_val = input("Introduzca valor para ver su longitud: \n")
 
-print("Buenos días {} :) :)".format(name))
+print("Longitud de {}: {}".format(str_val, len(str_val)))

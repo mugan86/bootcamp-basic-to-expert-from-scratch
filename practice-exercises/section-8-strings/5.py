@@ -1,25 +1,16 @@
-"""
-Escribe un programa en C# que donde vamos a introducir dos textos y vamos a comparar si son de la misma longitud y diferentes entre si.
-Mostrar lo siguiente después de introducir los dos textos:
-Resultado de lo introducido: <primerInput>,< segundoInput>
-Longitud de <primerInput> es x carácteres.
-Longitud de <segundoInput> es x carácteres.
-¿Tienen la misma logitud? <respuesta_true_o_false>
-¿Son iguales? (Comparar los dos valores>)
+one = input("Introduzca el primer producto:\n")
 
-"""
+two = input("Introduzca el segundo producto:\n")
 
-one = input("Introduzca el primer texto:\n")
+three = input("Introduzca el tercer producto:\n")
 
-two = input("Introduzca el segundo texto:\n")
+four = input("Introduzca el cuarto producto:\n")
 
-print("Resultado de lo introducido: {}, {}".format(one, two))
-print("Longitud de {} es de {} caracteres".format(one, len(one)))
-print("Longitud de {} es de {} caracteres".format(two, len(two)))
-print("¿Tienen la misma longitud? {}".format(
-    len(one) == len(two)
-))
+five = input("Introduzca el quinto producto:\n")
 
-print("¿Son iguales? {}".format(
-    one == two
-))
+result_one = "Resultado de los tres textos concatenados usando "
+result_second = " format:\n{}\n{}\n{}\n{}\n{}"
+print((result_one + result_second).format(one, two, three, four, five))
+print("==========================================================")
+result_second = f" f-string:\n{one}\n{two}\n{three}\n{four}\n{five}"
+print(result_one + result_second)

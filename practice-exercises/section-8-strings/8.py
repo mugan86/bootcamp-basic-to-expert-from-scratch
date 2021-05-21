@@ -1,14 +1,44 @@
-text = "Estoy haciendo los ejercicios opcionales del curso Bootcamp Python 3 con el profesor Anartz Mugika"
-# 1 Obtener la posición de la búsqueda "Bootcamp"
-find_position = text.index("Bootcamp")
+'''
+Escribe un programa en el que vamos a asignar a un string la siguiente frase “Estoy haciendo los ejercicios opcionales del curso Bootcamp Python 3 con el profesor Anartz Mugika”. 
+Vamos a realizar las siguientes comprobaciones y mostramos su resultado. Recordad que son diferentes los mismos carácteres que están en mayúsculas y minúsculas.
+(Trabajar con startswith, igualdad ==, endswith)
+Comienza con “Bootcamp Python 3”. => false
+Comienza con “Estoy haciendo los ejercicios opcionales” => true
+Es igual a “Estoy haciendo ejercicios opcionales” => false
+Finaliza con “Mugika” => true
+Finaliza con “AnartzMugika” => false
+Finaliza con “Anartz Mugika” => true"
+'''
 
-# 2 Aplicamos selección para coger la palabra,
-# donde cogemos la posición index y luego especficiamos
-# la longitud mediante la propiedad len dentro de "Bootcamp Python 3" y
-# sumamos la posición inicial de "find_position"
-extract_word = text[find_position:(find_position + len("Bootcamp Python 3"))]
+init_txt = "Estoy haciendo los ejercicios opcionales del curso {}"
+all_txt = init_txt.format("Bootcamp Python 3 con el profesor Anartz Mugika")
 
-print("Encontrado \"Bootcamp Python 3\" en la posición: {}"
-      .format(find_position))
-print("Extraido correctamente \"Bootcamp Python 3\": {}"
-      .format(extract_word))
+# Usando 'startswith'
+txt = "Comienza con 'Bootcamp Python 3': {}"
+check_result = all_txt.startswith('Bootcamp Python 3')
+print(txt.format(check_result))
+########################
+txt = "Comienza con 'Estoy haciendo los ejercicios opcionales': {}"
+check_result = all_txt.startswith('Estoy haciendo los ejercicios opcionales')
+print(txt.format(check_result))
+########################
+# Comparando si es igual ==
+equal_than = all_txt == "Estoy haciendo ejercicios opcionales"
+print("Es igual a 'Estoy haciendo ejercicios opcionales': {}".format(
+    equal_than
+))
+########################
+# Usando 'endswith'
+txt = "Finaliza con 'Mugika': {}"
+check_result = all_txt.endswith("Mugika")
+print(txt.format(check_result))
+########################
+txt = "Finaliza con 'AnartzMugika': {}"
+check_result = all_txt.endswith("AnartzMugika")
+print(txt.format(check_result))
+########################
+txt = "Finaliza con 'AnartzMugika': {}"
+check_result = all_txt.endswith("Anartz Mugika")
+print(txt.format(check_result))
+
+
