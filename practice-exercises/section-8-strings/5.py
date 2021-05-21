@@ -1,3 +1,9 @@
+"""
+Escribe un programa que concatene en dos variables, por un lado con la 
+función “format” y por otro con “f-string” una lista de 5 productos 
+que se mostrarán solo CON UN print y su contenido, elemento a elemento 
+tendrán un salto de línea (mirar bien los carácteres de escape).
+"""
 one = input("Introduzca el primer producto:\n")
 
 two = input("Introduzca el segundo producto:\n")

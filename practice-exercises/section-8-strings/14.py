@@ -1,3 +1,10 @@
+"""
+Siguiendo el ejercicio anterior, vamos a añadirle un apartado donde 
+nos muestra un mensaje “Seleccione la opción deseada” 
+(sin NINGÚN SALTO DE LÍNEA) y leer mediante teclado lo que introducimos.
+Preguntamos mediante el operador relacional: ¿Está entre 1 y 4 (incluidos)?
+¿Es igual a 5?
+"""
 print("===========================================================")
 print("\t\tAHORCADO - OPCIONES DEL JUEGO")
 print("===========================================================")
