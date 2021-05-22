@@ -3,6 +3,7 @@
         "./section-18-poo/6-inheritance",
         "./section-18-poo/7-multi-inheritance",
         "./section-20-modules",
-        "./section-21-pypi"
+        "./section-21-pypi",
+        "./practice-exercises/extra-projects-complete/1-strangle-game"
     ]
 }
