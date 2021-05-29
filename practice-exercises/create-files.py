@@ -2,8 +2,8 @@ import os
 
 script_directory = os.path.dirname(__file__)
 min= 1
-max = min + 19
+max = min + 10
 while(min < max +1):
-    file_path = f"{script_directory}/section-9-conditionals/{min}.py"
+    file_path = f"{script_directory}/section-12-tuples/{min}.py"
     open(file_path, "w")
     min += 1
