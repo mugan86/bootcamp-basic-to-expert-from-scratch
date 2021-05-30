@@ -1,5 +1,5 @@
 """
-10.- Permutar los valores de estas dos tuplas:
+Permutar los valores de estas dos tuplas:
 tuple_one = (23, 34)
 tuple_two = (34, 45)
 
