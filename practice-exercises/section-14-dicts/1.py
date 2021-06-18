@@ -1,40 +1,9 @@
-# Sin constructor
-the_blacklist = {
-    "name": "The Blacklist",
-    "first_air_date": "2013-06-01",
-    "seasons": 8,
-    "duration": "40-55",
-    "genres": ["Drama", "Crimen", "Misterio"],
-    "tags": [
-        "terrorist",
-        "fbi",
-        "investigation",
-        "criminal mastermind",
-        "crime lord",
-        "hidden identity",
-        "criminal consultant"
-    ]
-}
-print(type(the_blacklist))
-print(the_blacklist)
+# Inicializar el diccionario con dos valores clave y su valor relacionado
+d = {0:10, 1:20}
 
-# Con constructor
-the_blacklist = dict(
-    name = "The Blacklist",
-    first_air_date = "2013-06-01",
-    seasons = 8,
-    duration = "40-55",
-    genres = ["Drama", "Crimen", "Misterio"],
-    tags =  [
-        "terrorist",
-        "fbi",
-        "investigation",
-        "criminal mastermind",
-        "crime lord",
-        "hidden identity",
-        "criminal consultant"
-    ]
-)
-print(type(the_blacklist))
-print(the_blacklist)
+# Imprimimos
+print(d)
 
+# Actualizamos el diccionario existente
+d.update({2:30})
+print(d)
