@@ -1,3 +1,4 @@
+from draw import Draw
 class Game:
         def __init__(self):
             # Intentos por defecto
@@ -8,6 +9,11 @@ class Game:
             char_list_elements = list(hide_word.lower())
             # Inicializar lista para los carácteres que vamos introduciendo
             input_char_list = list()
+
+            draw_picture = Draw()
+            draw_picture.image(self.__atemps, 'ddddd')
+
+
             
             """
           
@@ -29,4 +35,6 @@ class Game:
             Draw.Image(Attemps, HideWord);
             Draw.HideWord(GameWordChardsShow);
             """
+        def get_hide_word(self):
+            pass
         
