@@ -1,6 +1,6 @@
-Línea 1.
-Línea 2.
-Línea 3.
-Línea 4.
-Línea 5.
-Línea 6.
+Linea 1.
+Linea 2.
+Linea 3.
+Linea 4.
+Linea 5.
+Linea 6.
