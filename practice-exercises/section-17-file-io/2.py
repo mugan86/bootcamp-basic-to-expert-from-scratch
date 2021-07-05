@@ -17,4 +17,4 @@ def print_n_lines(file_name, number_of_lines):
     except Exception as except_message:
         print(except_message)
 
-print_n_lines('exercise2', 3)
+print_n_lines('exercise2-3', 3)
