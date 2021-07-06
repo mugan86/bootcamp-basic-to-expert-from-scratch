@@ -73,28 +73,44 @@ salary_ranking_employees = {
     'over_9000': []
 }
 for employee in employees_list:
+    
     if (employee['salary'] < 5000): 
-        salary_ranking_employees['under_5000'] = employee
+        salary_ranking_employees['under_5000'].append(employee)
     elif (5000 <= employee['salary'] <= 9000): 
-        salary_ranking_employees['5000-9000'] = employee
+        salary_ranking_employees['5000-9000'].append(employee)
     else:
-        salary_ranking_employees['over_9000'] = employee
-"""print("Final", employees_list)
-print(salary_ranking_employees)"""
+        salary_ranking_employees['over_9000'].append(employee)
 
+# 4- Guardar los cambios en los ficheros
 try:
     # Obtenemos la ruta absoluta del directorio en el que estamos trabajando
     script_directory = os.path.dirname(__file__)
     file_path = f"{script_directory}/employees.txt"
     txt = open(file_path, "w")
+    txt.write(f"name,category,salary_per_hour,hours_work,salary\n")
     for employee_item in employees_list:
-        txt.write(f"{employee_item}\n")
+        text_data = f"{employee_item['name']}," + \
+                    f"{employee_item['category']}," + \
+                    f"{employee_item['salary_per_hour']}," + \
+                    f"{employee_item['hours_work']}," + \
+                    f"{employee_item['salary']}"
+        txt.write(f"{text_data}\n")
     txt.close()
     file_path = f"{script_directory}/employees_ranking_salaries.txt"
     txt = open(file_path, "w")
-    for employee_ranking_keys in salary_ranking_employees:
-        for employees_ranking_val in salary_ranking_employees[employee_ranking_keys]:
-            print(employees_ranking_val)
+    # Items completo
+    for key_value, value in salary_ranking_employees.items():
+        txt.write("===========================\n")
+        txt.write(f"\t{key_value}\n")
+        txt.write("===========================\n")
+        print(f"{key_value}:     \t{value}")
+        for employee_value in value:
+            text_data = f"{employee_value['name']}," + \
+                        f"{employee_value['category']}," + \
+                        f"{employee_value['salary_per_hour']}," + \
+                        f"{employee_value['hours_work']}," + \
+                        f"{employee_value['salary']}"
+            txt.write(f"{text_data}\n")
     txt.close()
 except FileExistsError:
     print("Fichero existe")
