@@ -1,0 +1,1 @@
+{'name': 'aaa', 'category': 'E', 'salary_per_hour': 35, 'hours_work': 1223, 'salary': 42805}

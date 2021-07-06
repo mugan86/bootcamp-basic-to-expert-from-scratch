@@ -18,4 +18,5 @@ def get_filelines_count():
         print(except_message)
         return 0
 
+# Iprimir las líneas que contiene el fichero
 print(get_filelines_count())
