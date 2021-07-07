@@ -1,5 +1,6 @@
 import os
 
+# Definimos función para abrir el fichero especificado
 def open_print_select_file(file_name):
     try:
         # Obtenemos la ruta absoluta del directorio en el que estamos trabajando
