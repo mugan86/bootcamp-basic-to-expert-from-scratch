@@ -60,6 +60,7 @@ word_list = get_filelines_content()
 
 list_max_characters_words = get_longest_words(word_list)
 
+# Resultado, dependiendo si solo hay una palabra ó más
 if (len(list_max_characters_words[1]) == 1):
     print(f"La palabra '{list_max_characters_words[1][0]}' tiene la " + \
             f"longitud máxima con {list_max_characters_words[0]} caracteres")
