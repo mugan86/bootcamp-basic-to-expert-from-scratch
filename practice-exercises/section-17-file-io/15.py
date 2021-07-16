@@ -19,7 +19,6 @@ para después ir almacenándolo.
 """
 import os
 
-
 employees_list = []
 categories_salary = {
     'A': 50,
