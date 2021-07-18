@@ -1,0 +1,10 @@
+===========================
+Notas de Bootcamp de Python 3: De 0 a Experto
+===========================
+Nombre / Apellidos,Correo electrónico,Nota
+Ruslan Gonzalez,ruslan@ruslan.com,9.9
+Daniel Martín,daniel@gmail.com,1.3
+Mikel Juaristi,mikel.naiz@gmail.com,6.7
+===========================
+PROMEDIO DE LA CLASE: 5.97
+===========================
