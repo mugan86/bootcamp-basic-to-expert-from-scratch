@@ -65,7 +65,7 @@ for i in range(number_students):
 
 # Parte 3.- <suma notas de todos estudiantes> / <nº estudiantes> = NOTA MEDIA
 avg_calification = calification_acumulator / number_students
-print(f"Nota media de la clase: {avg_calification}")
+print(f"Nota media de la clase: {avg_calification:.2f}")
 
 # Parte 4.- Clasificar alumnos/as con nota superioresa la media y por debajo
 above_avg = []
@@ -102,7 +102,7 @@ try:
     txt = open(file_path, "w")
     txt.write("===========================\n")
     txt.write(f"Notas de {course_name} superiores a la media: \
-                {avg_calification}\n")
+                {avg_calification:.2f}\n")
     txt.write("===========================\n")
     txt.write(f"Nombre / Apellidos,Correo electrónico,Nota\n")
     for item in above_avg:
@@ -112,7 +112,7 @@ try:
         txt.write(f"{text_data}\n")
     txt.write("===========================\n")
     txt.write(f"Notas de {course_name} inferiores a la media: \
-    {avg_calification}\n")
+    {avg_calification:.2f}\n")
     txt.write("===========================\n")
     txt.write(f"Nombre / Apellidos,Correo electrónico,Nota\n")
     for item in below_avg:

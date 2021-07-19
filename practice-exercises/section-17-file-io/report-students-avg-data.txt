@@ -1,11 +1,11 @@
 ===========================
-Notas de Bootcamp de Python 3: De 0 a Experto superiores a la media:                 5.966666666666668
+Notas de Bootcamp Python 3 superiores a la media:                 7.06
 ===========================
 Nombre / Apellidos,Correo electrónico,Nota
-Ruslan Gonzalez,ruslan@ruslan.com,9.9
-Mikel Juaristi,mikel.naiz@gmail.com,6.7
+Ruslan Gonzalez,r.gonzalez.dev@gmail.com,9.99
+Miren Iturbe,m.iturbe.it@gmail.com,7.8
 ===========================
-Notas de Bootcamp de Python 3: De 0 a Experto inferiores a la media:     5.966666666666668
+Notas de Bootcamp Python 3 inferiores a la media:     7.06
 ===========================
 Nombre / Apellidos,Correo electrónico,Nota
-Daniel Martín,daniel@gmail.com,1.3
+Mikel Martín,mikmar@gmail.com,3.4
