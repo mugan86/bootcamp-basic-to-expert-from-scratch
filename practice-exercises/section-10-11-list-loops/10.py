@@ -12,8 +12,8 @@ case_one = [1, 2, 3, 4, 5, 6, 7]
 case_two = [1, "Anartz", 4]
 case_three = [1, "Anartz", True, 90]
 
-total = 0
-for value in case_three:
+total = 1
+for value in case_one:
     if ( type(value) == int or type(value) == float): total *= value
 
-print(f"Total: {total} from {case_three}")
+print(f"Total: {total} from {case_one}")
