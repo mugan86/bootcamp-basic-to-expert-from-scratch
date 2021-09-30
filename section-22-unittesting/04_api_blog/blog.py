@@ -6,7 +6,7 @@ class Blog:
         return requests.get("https://jsonplaceholder.typicode.com/posts").json()
 
 
-"""La prueba del Blog"""
+"""La prueba del Blog
 blog = Blog()
 
-print(blog.posts())
+print(blog.posts())"""
