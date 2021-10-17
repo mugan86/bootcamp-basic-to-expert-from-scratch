@@ -1,6 +1,4 @@
-from open_weather_api.api import Api
-from open_weather_api.constants import CURRENT, FORECAST
-from open_weather_api.options.city import City
+from open_weather_api.constants import CURRENT
 from open_weather_api.options.coordinates import Coordinates
 
 config = dict(
