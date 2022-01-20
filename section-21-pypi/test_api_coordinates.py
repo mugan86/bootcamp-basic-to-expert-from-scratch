@@ -3,16 +3,18 @@ from open_weather_api.constants import CURRENT
 from open_weather_api.options.coordinates import Coordinates
 
 """
-Estamos testeando lo correspondiente a la request de JSONPlaceHolder Typicode
-el apartado de commentarios "comments" que hemos añadido al módulo "blog" con "comments"
-como función
+Estamos testeando lo correspondiente a al paquete de OpenWeatherMap, para
+ir viendo si funciona correctamente.
+Lo que queremos testear es si forma bien la URL, si coge bien sus elementos.
+La respuesta mockeada.
+Los mensajes de error, cuando no se configura correctamente
 """
 
 
 class TestCoordinates(TestCase):
     def test_check_is_add_correct_init(self):
         config = dict(
-            key='194f66064a427d3f0bcca212ab703736',
+            key='AQUI_NUESTRA_API_KEY',
             units='metric',
             lang='es',
             type=CURRENT

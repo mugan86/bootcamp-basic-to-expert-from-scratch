@@ -12,7 +12,7 @@ como función
 class TestCity(TestCase):
     def test_check_is_add_correct_init(self):
         config = dict(
-            key='194f66064a427d3f0bcca212ab703736',
+            key='AQUI_NUESTRA_API_KEY',
             units='metric',
             lang='es',
             type=CURRENT
